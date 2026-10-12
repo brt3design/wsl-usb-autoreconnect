@@ -15,12 +15,11 @@ Once locked, this script runs silently in the background and guarantees that whe
 
 ## 🚀 How to Use (Jetson Orin Flashing Example)
 
-1. Open PowerShell **as Administrator**.
-2. Run the tool: `.\wsl-usb-autoreconnect.ps1`
-3. Press the corresponding **[KEY]** (e.g., `1`) to lock your NVIDIA Jetson device.
-4. The UI will mark it as `[LOCKED]`.
-5. Run your flash script inside WSL. When the Jetson board reboots into Recovery/Fastboot mode and disconnects from Windows, this TUI will automatically catch it and reconnect it to WSL instantly.
-6. Press `Q` or `Ctrl+C` to gracefully release devices and exit.
+1. Simply double-click **`Start.bat`**. (It will automatically request Administrator privileges and bypass execution policies).
+2. Press the corresponding **[KEY]** (e.g., `1`) to lock your target USB device.
+3. The UI will mark it as `[LOCKED]`.
+4. Run your flash script inside WSL. The tool will handle everything else automatically.
+5. Press `Q` or `Ctrl+C` to gracefully release devices and exit.
 
 ## Prerequisites
 - Windows 11 (or Windows 10 with WSL2).
